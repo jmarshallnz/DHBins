@@ -75,19 +75,19 @@ sl<-function (counts)
 
 
 dhbs<-data.frame(
-printname=c("Northland","Waitemata","Counties \nManukau","Taranaki","Auckland",
-            "Waikato","Whanganui","Capital\n and Coast", "Bay of\nPlenty","Lakes",
-            "Midcentral","Hutt\nValley","Tairawhiti","Hawke's \nBay","Wairarapa",
+printname=c("Northland","Auckland\nMetro","Taranaki",
+            "Waikato","Whanganui","Wellington\nMetro", "Bay of\nPlenty","Lakes",
+            "Midcentral","Tairawhiti","Hawke's \nBay","Wairarapa",
             "Nelson \nMarlborough","West Coast","Canterbury","South \nCanterbury",
             "Southern"),
-keyname=c("Northland","Waitemata","Counties Manukau","Taranaki","Auckland",
-          "Waikato","Whanganui","Capital and Coast", "Bay of Plenty","Lakes",
-          "Midcentral","Hutt","Tairawhiti","Hawke's Bay","Wairarapa",
+keyname=c("Northland","Auckland","Taranaki",
+          "Waikato","Whanganui","Wellington", "Bay of Plenty","Lakes",
+          "Midcentral","Tairawhiti","Hawke's Bay","Wairarapa",
           "Nelson Marlborough","West Coast","Canterbury","South Canterbury",
           "Southern"),
-shortname=c("N","W","CM","T","A","W","Wh","CC","BOP","L","M","H","T","HB","W","NM","WC","C","SC","S"),
-x=c(1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,2,1,2,1,0)*(1.5),
-y=c(18,16,14,12,15,13,11,9,14,12,10,8,13,11,9,5,4,3,2,1)*sqrt(3)/2
+shortname=c("N","A","T","W","Wh","WM","BOP","L","M","T","HB","W","NM","WC","C","SC","S"),
+x=c(1,2,1,2,2,3,3,3,3,4,4,4,2,1,2,1,0)*(1.5),
+y=c(16,15,12,13,11,8,14,12,10,13,11,9,5,4,3,2,1)*sqrt(3)/2
 )
 
 dhmap_hex<-function(){
@@ -121,13 +121,11 @@ dhmap_tri<-function(){
 
 
 .aliases<-list(Northland=c("Northland","NDHB","Northland DHB"),
-              Waitemata=c("Waitemata","Waitemat\u0101","Waitemata DHB"),
-              "Counties Manukau"=c("Counties Manukau","Counties","CM Health","Counties Manukau DHB"),
+               Auckland=c("Auckland", "ADHB", "Auckland Metro"),
               Taranaki=c("TDHB","Taranaki","Taranaki DHB"),
-              Auckland=c("ADHB","Auckland","Auckland DHB"),
               Waikato=c("Waikato","Waikato DHB"),
               Whanganui=c("Whanganui","Wanganui","WDHB","Whanganui DHB"),
-              "Capital and Coast"=c("Capital and Coast","Capital & Coast","CCDHB","Capital and Coast DHB","Capital & Coast DHB"),
+              Wellington=c("Wellington"),
               "Bay of Plenty"=c("Bay of Plenty","Bay Of Plenty","BOP","BoP","BOPDHB","Bay of Plenty DHB"),
               Lakes=c("Lakes","Lakes DHB"),
               Midcentral=c("Midcentral","MidCentral","MDHB","Mid Central DHB","MidCentral DHB"),
