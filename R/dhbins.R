@@ -91,7 +91,7 @@ y=c(18,16,14,12,15,13,11,9,14,12,10,8,13,11,9,5,4,3,2,1)*sqrt(3)/2
 )
 
 dhmap_hex<-function(){
-    size=rep(0.95,20)
+    size=rep(0.95,nrow(dhbs))
     hex_x <- hex_point
     hex_y <- hex_flat
     
@@ -106,7 +106,7 @@ dhmap_hex<-function(){
 
 
 dhmap_tri<-function(){
-    size=rep(0.95,20)
+    size=rep(0.95,nrow(dhbs))
     tri_x <- tri_point
     tri_y <- tri_flat
     
