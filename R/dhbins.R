@@ -77,7 +77,7 @@ sl<-function (counts)
 dhbs<-data.frame(
 printname=c("Northland","Auckland\nMetro","Taranaki",
             "Waikato","Whanganui","Wellington\nMetro", "Bay of\nPlenty","Lakes",
-            "Midcentral","Tairawhiti","Hawke's \nBay","Wairarapa",
+            "Midcentral","Tair\u0101whiti","Hawke's \nBay","Wairarapa",
             "Nelson \nMarlborough","West Coast","Canterbury","South \nCanterbury",
             "Southern"),
 keyname=c("Northland","Auckland","Taranaki",
