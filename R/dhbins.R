@@ -114,7 +114,7 @@ dhmap_tri<-function(){
         data.frame(
             x=as.vector(t(outer(size, tri_x) + dhbs$x)),
             y= as.vector(t(outer(size, tri_y) + dhbs$y)),
-            id =rep(paste(dhbs$keyname,1:6),each=5)
+            id= paste(rep(dhbs$keyname,each=6*4), rep(rep(1:6,nrow(dhbs)),each=4), sep="_")
         )
     )
 }
